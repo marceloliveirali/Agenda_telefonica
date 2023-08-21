@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda telefônica</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./imagens/5s2r_4gbm_230118-removebg-preview.png" alt="Telefone fixo">
+            <h1>Agenda telefônica</h1>
+        </header>
+        <main>
+            <section>
+                <form id="form-atvidade">
+                    <input type="text" id="person-name" placeholder="Nome do contato" required />
+                    <input type="tel" id="person-phone" placeholder="Número do contato" required />
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </section>
+            <section>
+                <table cellspacing="0">
+                    <thead>
+                        <tr class="table-header">
+                            <th>
+                                Nome do contato
+                            </th>
+                            <th>
+                                Número do contato
+                            </th>
+                            <th>
+                                Cadastrado?
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2" class="total-reg">
+                                Total de contatos registrados
+                            </td>
+                            <td id="total-number">
+                                ---
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>      
+        </main>
+    </div>
+    
+    <script src="./script.js"></script>    
+</body>
+</html>
